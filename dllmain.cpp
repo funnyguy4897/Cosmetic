@@ -13,9 +13,9 @@
 //   GameManager::isColorUnlocked(int, UnlockType)
 //   GameStatsManager::isItemUnlocked(UnlockType, int)
 // Leave a value at 0 to skip that patch.
-static const uintptr_t OFFSET_isIconUnlocked  = 0x0; // TODO
-static const uintptr_t OFFSET_isColorUnlocked = 0x0; // TODO
-static const uintptr_t OFFSET_isItemUnlocked  = 0x0; // TODO
+static const uintptr_t OFFSET_isIconUnlocked  = 0x2773d0;
+static const uintptr_t OFFSET_isColorUnlocked = 0x2777a0;
+static const uintptr_t OFFSET_isItemUnlocked  = 0x2e9470;
 
 // mov al, 1 ; ret  -> function immediately returns true
 static const uint8_t RETURN_TRUE[] = { 0xB0, 0x01, 0xC3 };
